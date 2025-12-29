@@ -1,0 +1,701 @@
+@charset "UTF-8"
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: top;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: "Paperlogy", "Noto Sans KR", sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.cl::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fl{
+    float: left;
+}
+
+html, body{ 
+    margin: 0 !important; 
+    padding: 0 !important; }
+
+
+/*end of reset-------------------------*/
+
+.wrap{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.section {
+    width: 100%;       /* 가로 꽉 채우기 */
+    position: relative; 
+    overflow: hidden;  /* 내부 요소가 튀어나가는 것 방지 */
+}
+
+.inner {
+    max-width: 1220px; /* 콘텐츠가 모이는 최대 너비 */
+    margin: 0 auto;    /* 화면 가운데 정렬 */
+    padding: 0;   /* 섹션 위아래 적당한 여백 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*header--------------------------------*/
+header{
+    width: 100%;
+    height: 63px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    z-index: 99999;
+}
+
+header .logo{
+    width: 327px;
+    height: 27px;
+    margin: 20px 20px;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    align-items: center;
+
+}
+
+header nav ul{
+    display: flex;
+    margin: 20px 20px;
+
+}
+
+header nav ul li a{
+    color: #fff;
+    margin-right: 20px;
+    font: 20px "Paperlogy";
+}
+
+header nav ul li a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+/*end of header----------------------*/
+
+/*main----------------------*/
+
+.s1{
+    width: 100%;
+    height: 362px;
+    background: url('../images/sub2_about_background.png') no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-top: 0 !important;
+}
+
+.s1 .main{
+    width: 100%;         
+    height: 362px;
+    
+    display: flex;
+    flex-direction: column;  /* 세로 나열 */
+    justify-content: center; /* 세로 기준 중앙 */
+    align-items: center;     /* 가로 기준 중앙 */
+    text-align: center;
+    
+}
+
+.s1 .main h1{
+    font: 60px "Noto Sans KR";
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin:0;
+}
+
+.s1 .main p{
+    font-size: 18px;
+    margin: 0;
+}
+
+/*end of main----------------------*/
+
+
+/*main menu----------------------*/
+
+.s2{width: 100%;
+    height: 52px;
+    background-color: #000;
+    border-top: 0.75px solid #fff;
+    border-bottom: 0.75px solid #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.s2 .mainmenu ul{
+    width: 1220px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;              
+    margin: 0;
+}
+
+.s2 .mainmenu ul li img{
+    width: 13px;
+    height: 19px;
+    margin: 1px 10px;
+}
+
+.s2 .mainmenu ul li a{
+    color: white;
+    font-size: 18px;
+}
+
+
+.s2 .mainmenu ul li a{
+    opacity: 0.7;
+}
+.s2 .mainmenu ul li a:hover{
+    opacity: 1;
+}
+
+.s2 .mainmenu ul li .select{
+    font-size: 25px;
+    opacity: 1;
+}
+/*end of main menu----------------------*/
+
+
+/*about 01----------------------*/
+
+.s3{
+    width: 100%;
+    height: 1650px;
+    background-color: #000;
+    display: block;
+    padding: 0;              
+    margin: 0;
+    overflow: hidden;
+}
+
+.s3 .inner{
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.s3 .inner .about01 .title{  
+    text-align: center;
+    margin-top: 100px;
+}
+
+.s3 .inner .about01 .title h3{
+    font: 48px "Noto Sans KR";
+    margin: 0;
+    font-weight: 600;
+}
+
+.s3 .inner .about01 .title p{
+    font-size: 25px;
+    line-height: 35px;
+    margin: 10px;
+}
+
+.start{
+    width: 16px;
+    height: 15px;
+}
+
+.s3 .inner .about01 h4{
+    font-size: 36px;
+    margin: 10px 0 15px 0;
+    font-weight: 600;
+}
+
+.s3 .inner .about01 .c1{
+    width: 412px;
+    height: 162px;
+    margin-top: 100px;
+}
+
+.s3 .inner .about01 .contents .c2{
+    width: 720px; 
+    position: relative;
+    left: 488px;
+    top: -152px;
+}
+
+
+.s3 .inner .about01 .contents .c3{
+    width: 720px;
+    position: relative;
+    left: 488px;
+    top: 455px;
+}
+
+.s3 .inner .about01 .contents p{
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 33px;
+    margin: 20px 0;
+}
+
+
+.s3 .inner .about01 .contents .last{
+    font-weight: 500;
+}
+
+
+
+.s3 .inner .about01 .contents .c3 .last{
+    display: inline;
+}
+
+.s3 .inner .about01 .contents .c3 img{
+    display: inline-block;
+    width: 109px;
+    height: 35px;
+    margin: 0;
+    vertical-align: bottom;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
+.s3 .inner .about01 .contents{
+    width: 1220px;
+}
+
+
+.s3 .person{
+    width: 1569px;
+    height: 555px;
+    /* 텍스트 흐름을 방해하지 않도록 절대 위치 사용 */
+    position: absolute;
+    
+    /* 위치 기준: .c2와 .c3 사이의 적절한 높이값(top)을 입력하세요. 
+       현재 c2가 top: -152px이므로, 그 아래 적절한 위치인 350px~400px 정도로 잡습니다. */
+    top: 665px;
+    left: calc(1220px - 1569px + 350px);
+
+    /* 이미지가 텍스트 위를 덮는다면 뒤로 보냄 */
+    z-index: 0; 
+    pointer-events: none; /* 이미지가 텍스트 클릭을 방해하지 않게 함 */
+}
+
+/*end of about 01----------------------*/
+
+
+
+/*about 02----------------------*/
+
+
+.s4{
+    width: 100%;
+    height: 1153px;
+    background: url(../images/sub2_about2_background.png) no-repeat center/cover;
+    display: block;
+    padding: 0;              
+    margin: 0;
+    overflow: hidden;
+}
+
+.s4 .inner{
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.s4 .inner .about02 .title{  
+    text-align: center;
+    margin-top: 100px;
+}
+
+.s4 .inner .about02 .title h3{
+    font: 48px "Noto Sans KR";
+    margin: 0;
+    font-weight: 600;
+}
+
+.s4 .inner .about02 .title p{
+    font-size: 25px;
+    line-height: 35px;
+    margin: 20px;
+}
+
+
+
+.s4 .inner .about02 .contents.c1 p .name{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.s4 .inner .about02 .contents.c1 p {
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    color: #000;
+    z-index: 2;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+}
+
+.s4 .inner .about02 .contents.c1 .e{
+    color: #fff;
+    position: absolute;
+    top: 551px;
+    left: 1020px;
+}
+
+.s4 .inner .about02 .contents.c1 .a{
+    position: absolute;
+    top: 551px;
+    left: 75px;
+}
+
+.s4 .inner .about02 .contents.c1 .b{
+    position: absolute;
+    top: 432px;
+    left: 467px;
+}
+
+.s4 .inner .about02 .contents.c1 .c{
+    position: absolute;
+    top: 677px;
+    left: 472px;
+}
+
+.s4 .inner .about02 .contents.c1 .d{
+    position: absolute;
+    top: 551px;
+    left: 843px;
+}
+
+.s4 .inner .about02 .contents.c1 img{
+    width: 1220px;
+    height: 497px;
+    position: absolute;
+    top: 354px;
+    left:0;
+}
+
+.s4 .inner .about02 .contents.c1 p:hover {
+     transform: scale(1.1);
+     opacity: 1;
+}
+
+.s4 .inner .about02 .contents.c2{
+    width: 1220px;
+    margin-top: 625px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+    
+}
+
+
+.s4 .inner .about02 .contents.c2 .member{
+     font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-top: 15px;
+
+}
+
+.s4 .inner .about02 .contents.c2 p{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.s4 .inner .about02 .contents.c2 p:hover{
+    transform: scale(1.1);
+}
+
+
+/*end of about 02----------------------*/
+
+
+.s5{
+    width: 100%;
+    height: 2185px;
+    background-color: #000;
+    display: block;
+    padding: 0;              
+    margin: 0;
+    overflow: hidden;
+}
+
+.s5 .inner{
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.s5 .inner .history .title{  
+    text-align: center;
+    margin-top: 100px;
+}
+
+.s5 .inner .history .title h3{
+    font: 48px "Noto Sans KR";
+    margin: 0;
+    font-weight: 600;
+}
+
+.s5 .inner .history .title p{
+    font-size: 25px;
+    line-height: 35px;
+    margin: 40px;
+
+}
+
+.s5 .inner .history ul{
+    display: flex;
+    margin-top: 50px;
+}
+
+.s5 .inner .history ul li{
+    width: 182px;
+    height: 47px;
+    background-color: #000;
+    border-radius: 30px;
+    border: 0.75px solid #fff;
+    text-align: center;
+    line-height: 47px;
+    margin-right: 15px;
+}
+
+.s5 .inner .history ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.s5 .inner .history ul li:hover{
+    background-color: #fff;
+}
+
+.s5 .inner .history ul li:hover a{
+    color: #000;
+    font-weight: 400;
+}
+
+.s5 .inner .history .hisimg{
+    width: 1220px;
+    height: 1648px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 70px;
+}
+
+
+.s5 .inner .history .hisimg img{
+    width: 1220px;
+    height: 1648px;
+    display: block;
+}
+
+/* 모든 이미지를 숨기고 첫 번째만 보이게 함 */
+.s5 .inner .history .hisimg img {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* 부드러운 전환 효과 */
+}
+
+.s5 .inner .history .hisimg img:first-child {
+    display: block;
+    opacity: 1;
+}
+
+/* 선택된 버튼 스타일 (선택사항) */
+.s5 .inner .history .button li.active {
+    background-color: #fff;
+}
+.s5 .inner .history .button li.active a {
+    color: #000;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/*footer----------------------*/
+
+
+
+footer{
+    width: 100%;
+    height: 352px;
+    background: url('../images/footer_background.png') no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .inner {
+    display: block;    /* 명시적으로 블록 성질 부여 */
+    width: 1220px;     /* 가로폭 고정 */
+    margin: 0 auto;    /* 중앙 정렬 */
+    overflow: hidden;  /* 자식 요소들이 float일 경우 높이값을 잡기 위해 필요 */
+
+}
+
+footer .left{
+    float: left;
+    margin: 50px 0;
+}
+
+
+footer .footerlogo{
+    width: 281px;
+    height: 22px;
+    margin-bottom: 45px;
+}
+
+footer .footermenu{
+    width: 480px;
+    height: 30px;
+    display: flex;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+
+footer .footermenu li a{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 0 15px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+footer .footermenu li:first-child a{
+    width: 100%;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+footer .footermenu li a:hover{
+    color: gray;
+}
+
+/* footer .footercontents{
+    position: absolute;
+    top:150px;
+    left:367px; 
+} */
+
+footer .footercontents p{
+    margin: 10px 0
+}
+
+footer .footercontents .with{
+    margin-top: 27px;
+}
+
+.with img{
+    width: 391px;
+    height: 31px;
+}
+
+/* footer .footercontents2{
+    position: absolute;
+    top:194px;
+    right:348px;
+} */
+
+footer .footercontents2 p{
+    margin: 0;
+    padding: 0;
+}
+
+footer .footercontents2 ul {
+    
+    height: 29px;
+    margin-top: 8px;
+    display: inline-block;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footercontents2 ul li{
+    display: inline-block;
+}
+
+footer .footercontents2 ul li img{
+    display: block;
+    width: 29px;
+    height: 29px;
+    margin-top:8px;
+    margin-left:10px;
+}
+
+footer .right{
+    float: right;
+    margin-top: 221px;
+    text-align: right;
+}
+
+
+/*end of footer----------------------*/
+
+
+/*top button-----------------------*/
+
+.top{
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10000;
+    display: block;
+}
+
+
+/*end of top button-----------------------*/
