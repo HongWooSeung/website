@@ -1,0 +1,824 @@
+@charset "UTF-8"
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: top;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: "Paperlogy", "Noto Sans KR", sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.cl::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fl{
+    float: left;
+}
+
+/*end of reset-------------------------*/
+
+.wrap{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.section {
+    width: 100%;       /* 가로 꽉 채우기 */
+    position: relative; 
+    overflow: hidden;  /* 내부 요소가 튀어나가는 것 방지 */
+}
+
+.inner {
+    max-width: 1220px; /* 콘텐츠가 모이는 최대 너비 */
+    margin: 0 auto;    /* 화면 가운데 정렬 */
+    padding: 0;   /* 섹션 위아래 적당한 여백 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*header--------------------------------*/
+header{
+    width: 100%;
+    height: 63px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    z-index: 99999;
+}
+
+header .logo{
+    width: 327px;
+    height: 27px;
+    margin: 20px 20px;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    align-items: center;
+
+}
+
+header nav ul{
+    display: flex;
+    margin: 20px 20px;
+
+}
+
+header nav ul li a{
+    color: #fff;
+    margin-right: 20px;
+    font: 20px "Paperlogy";
+}
+
+header nav ul li a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+/*end of header----------------------*/
+
+/*main----------------------*/
+
+.s1{
+    width: 100%;
+    height: 362px;
+    background: url('../images/sub_gallery_background.png') no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-top: 0 !important;
+}
+
+.s1 .main{
+    width: 100%;         
+    height: 362px;
+    
+    display: flex;
+    flex-direction: column;  /* 세로 나열 */
+    justify-content: center; /* 세로 기준 중앙 */
+    align-items: center;     /* 가로 기준 중앙 */
+    text-align: center;
+    
+}
+
+.s1 .main h1{
+    font: 60px "Noto Sans KR";
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin:0;
+}
+
+.s1 .main p{
+    font-size: 18px;
+    margin: 0;
+}
+
+/*end of main----------------------*/
+
+
+/*main menu----------------------*/
+
+.s2{width: 100%;
+    height: 52px;
+    background-color: #000;
+    border-top: 0.75px solid #fff;
+    border-bottom: 0.75px solid #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.s2 .mainmenu ul{
+    width: 1220px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;              
+    margin: 0;
+}
+
+.s2 .mainmenu ul li img{
+    width: 13px;
+    height: 19px;
+    margin: 1px 10px;
+}
+
+.s2 .mainmenu ul li a{
+    color: white;
+    font-size: 18px;
+}
+
+
+.s2 .mainmenu ul li a{
+    opacity: 0.7;
+}
+.s2 .mainmenu ul li a:hover{
+    opacity: 1;
+}
+
+.s2 .mainmenu ul li .select{
+    font-size: 25px;
+    opacity: 1;
+}
+
+
+/*end of main menu----------------------*/
+
+
+
+/*gallery1----------------------*/
+
+.s3{
+    width: 100%;
+    height: 1135px;
+    background-color: #000;
+    display: flex;
+    padding: 0;              
+    margin: 0;
+}
+
+.s3 .inner .gallery1 .title{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.s3 .inner .gallery1 .title h3{
+    font: 48px "Noto Sans KR";
+    margin: 0;
+    font-weight: 600;
+}
+
+.s3 .inner .gallery1 .title p{
+    font-size: 25px;
+    line-height: 35px;
+    margin: 10px;
+}
+
+.s3 .inner .gallery1 .contents{
+    display: flex;
+}
+
+.s3 .inner .gallery1 .contents .c1,.c3{
+    margin: 50px 45px;
+}    
+
+.s3 .inner .gallery1 .contents .c2{
+    margin-top: 180px;
+}    
+
+
+.s3 .inner .gallery1 .contents img{
+    width: 369px;
+    height: 470px;
+}
+
+.s3 .inner .gallery1 .contents h3{
+    font: 60px "Noto Sans KR";
+    font-weight: normal;
+    margin: 0;
+}
+
+.s3 .inner .gallery1 .contents h6{
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    font-weight: normal;
+}
+
+.s3 .inner .gallery1 .contents p{
+    font-size: 17px;
+    font-weight: 100;
+    margin: 7px 0 0 0;
+    line-height: 25px;
+}
+
+.conimg h6:hover, 
+.conimg p:hover {
+    text-decoration: underline;
+    cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
+}
+
+
+/*end of gallery1----------------------*/
+
+
+
+/* 팝업 배경 - 화면 전체를 덮는 설정 */
+.modal {
+    display: none; 
+    position: fixed; /* 브라우저 화면 기준으로 고정 */
+    z-index: 9999;   /* 어떤 요소보다도 위에 있게 설정 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* 배경 투명도 조절 */
+}
+
+/* 팝업 중앙 정렬 */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 정확히 화면 중앙에 위치 */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 85%;
+    max-width:1100px;
+    max-height: 90vh;
+
+   padding: 40px 40px;  /* ★ 상하 여백을 40px에서 80px로 늘려 세로로 길어 보이게 합니다. */
+    
+    min-height: 500px;   /* ★ 최소 세로 높이를 강제로 지정합니다. (원하는 만큼 px 수정) */
+    
+    display: flex;       /* 내부 요소를 세로로 중앙 정렬하기 위해 추가 */
+    align-items: center; /* 내부 내용이 세로 중앙에 오도록 함 */
+    border-radius: 15px;
+    color: #fff;
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+}
+
+/* 내부 레이아웃 */
+
+.detail-text{
+
+    display: none;}
+
+.modal-body {
+    width: 100%;         /* 부모 넓이에 맞춤 */
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; /* 이미지와 텍스트를 서로 세로 가운데 정렬 */
+}
+
+.modal-body img {
+    width: 61%; /* 이미지 크기 고정 */
+    height: auto;
+    border-radius: 5px;
+}
+
+.modal-text {
+    width: 39%;
+    text-align: left;
+    margin: 0;
+    flex:1;
+    word-break: keep-all;
+}
+
+/* 작품명 (h3) */
+#modalTitle {
+    font-family: "Noto Sans KR";
+    font-size: 50px;    /* ★글자 크기 */
+    font-weight: 400;   /* 두께 */
+    color: #fff;
+    margin: 0;
+}
+
+/* 작가명 (h6) */
+#modalAuthor {
+    font-size: 35px;    /* ★글자 크기 */
+    font-weight: 400;
+    color: #bbb;        /* 약간 흐린 회색 */
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff; /* 작가명 아래 구분선 추가 */
+    padding-bottom: 10px;
+}
+
+/* 작품 설명 (p) */
+#modalDesc {
+    width: 430px;
+    text-align: justify;
+    font-size: 22px;    /* ★글자 크기 */
+    line-height: 1.6;   /* 줄 간격 */
+    color: #aaa;
+    word-break: keep-all; /* 한글 단어 끊김 방지 */
+}
+
+
+/* 닫기 버튼을 팝업 박스 안쪽 우측 상단에 배치 */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: 100;
+    cursor: pointer;
+    color: #fff;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 1001;
+    margin: 0;
+}
+
+#modalImg {
+    flex:1;
+    width: 50%;          /* 부모(modal-body) 가로 폭의 절반 차지 */
+    max-width: 500px;
+    height: auto;        /* 가로 세로 비율 유지 (가장 중요!) */
+    
+    /* 화면 높이에 맞춰 이미지가 너무 커지지 않게 제한 */
+    max-height: 75vh;    /* 브라우저 화면 높이의 75%까지만 커짐 */
+    
+    /* 이미지가 박스 안에 꽉 차되, 비율이 깨지지 않게 설정 */
+    object-fit: contain; 
+    
+    /* 고화질 이미지가 뭉개지지 않고 선명하게 보이도록 보정 */
+    image-rendering: -webkit-optimize-contrast; 
+    
+    border-radius: 5px;  /* 이미지 모서리 살짝 둥글게 */
+}
+
+
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 40px 20px;
+        width: 95%;
+    }
+    
+    .modal-body {
+        flex-direction: column; /* 가로 배치를 세로 배치로 변경 */
+        align-items: center;
+        gap: 20px;
+    }
+
+    #modalImg, .modal-text {
+        width: 100%; /* 가로폭을 꽉 채움 */
+    }
+    
+    .modal-text {
+        text-align: center; /* 모바일에서는 중앙 정렬이 더 예뻐요 */
+    }
+}
+
+
+/*gallery2----------------------*/
+
+
+.s4{
+    width: 100%;
+    height: 913px;
+    background-color: #000;
+    display: flex;
+    padding: 0;              
+    margin: 0;
+}
+
+.s4 .inner{
+    position: relative;
+}
+
+.s4 .inner .gallery2{
+    margin: 0;
+    padding: 0;
+}
+
+.s4 .inner .gallery2 .title h3{
+    font-size: 48px;
+    font-weight: 600;
+    margin: 100px 0 20px 0;
+}
+
+.s4 .inner .gallery2 .contents h4{
+    font-size: 35px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.s4 .inner .gallery2 .contents .border{
+    width: 1220px;
+    border-bottom: 0.75px solid #fff;
+    margin-top: 20px;
+}
+
+.s4 .inner .gallery2 .contents .tag{
+    width: auto;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.s4 .inner .gallery2 .contents p{
+    width: 1220px;
+    height: 110px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.s4 .inner .gallery2 .button img{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    top: 592px;
+    left: 1133px;
+}
+
+.s4 .inner .gallery2 .button {
+    opacity: 0.7;
+}
+
+.s4 .inner .gallery2 .button:hover {
+    opacity: 1;
+}
+
+.contents h4:hover,
+.contents p:hover {
+    text-decoration: underline;
+    cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
+}
+
+/*end of gallery2----------------------*/
+
+
+
+/*gallery3----------------------*/
+
+.s5{
+    width: 100%;
+    height: 900px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 0;              
+    margin: 0;
+}
+
+
+.s5 .inner{
+    width: 1220px;
+    padding: 0;              
+    margin: 0;
+    position: relative;
+}
+
+.s5 .inner .gallery3 ul{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.s5 .inner .gallery3 ul li{
+    height: 52px;
+    border-bottom: 0.75px solid #fff ;
+    margin: 0 10px;
+}
+
+.s5 .inner .gallery3 ul li img{
+    width: 10px;
+    height: 6px;
+    margin: 0 5px;
+}
+
+.s5 .inner .gallery3 ul li a{
+    display: flex;
+    align-items: center;
+}
+
+
+.s5 .inner .gallery3 ul li .years{
+    width: 152px;
+    height: 47px;
+}
+
+.s5 .inner .gallery3 ul li .month{
+    width: 75px;
+    height: 47px;
+}
+
+.s5 .inner .gallery3 ul li .slash{
+    width: 49px;
+    height: 50px;
+}
+
+
+.s5 .inner .gallery3 ul li img{
+    opacity: 0.7;
+}
+
+.s5 .inner .gallery3 ul li img:hover{
+    opacity: 1
+}
+
+.s5 .inner .gallery3 .calender{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+
+}
+
+.s5 .inner .gallery3 .calender a{
+    display: inline-block;
+    width: 183px;
+    height: 262px;
+    margin: 0 9px 20px 9px;
+    position: relative;
+    color: #fff;
+}
+
+.s5 .inner .gallery3 .calender img{
+    width: 183px;
+    height: 262px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    filter: brightness(0.4);
+} 
+
+.s5 .inner .gallery3 .calender .non{
+    filter: brightness(1);
+}
+
+.s5 .inner .gallery3 .calender .may{
+    width: 406px;
+    height: 544px;
+    border-right: 0.75px solid #fff;
+}
+
+/* .s5 .inner .gallery3 .calender .may img{
+    margin: 0 9px 20px 9px;
+} */
+
+.s5 .inner .gallery3 .calender .aug{
+    width: 406px;
+    height: 544px;
+}
+
+/* .s5 .inner .gallery3 .calender .aug img{
+    margin: 0 9px 20px 9px;
+} */
+
+.s5 .inner .gallery3 .calender .jun{
+    width: 201px;
+    height: 544px;
+    border-right: 0.75px solid #fff;
+}
+
+/* .s5 .inner .gallery3 .calender .jun img{
+    margin: 0 9px 20px 9px;
+} */
+
+.s5 .inner .gallery3 .calender .jul{
+    width: 201px;
+    height: 544px;
+    border-right: 0.75px solid #fff;
+}
+
+
+/* .s5 .inner .gallery3 .calender .jul img{
+    margin: 0 9px 20px 9px;
+} */
+
+
+.s5 .inner .gallery3 .calender .table p{
+    width: 240px;
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    z-index: 10;
+}
+
+.s5 .inner .gallery3 .calender a:hover img{
+    filter: brightness(1);
+    transition: opacity 0.3s ease;
+}
+
+.s5 .inner .gallery3 .calender a:hover p{
+    opacity: 0;
+} 
+
+
+.s5 .inner .gallery3 .title h3{
+    font-size: 48px;
+    font-weight: 600;
+    margin: 100px 0 20px 0;
+    position: absolute;
+    left: 100%;
+    top: 645px;
+    transform: translate(-100%)
+}
+
+
+/*end of gallery3----------------------*/
+
+
+
+/*footer----------------------*/
+
+
+
+footer{
+    width: 100%;
+    height: 352px;
+    background: url('../images/footer_background.png') no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .inner {
+    display: block;    /* 명시적으로 블록 성질 부여 */
+    width: 1220px;     /* 가로폭 고정 */
+    margin: 0 auto;    /* 중앙 정렬 */
+    overflow: hidden;  /* 자식 요소들이 float일 경우 높이값을 잡기 위해 필요 */
+
+}
+
+footer .left{
+    float: left;
+    margin: 50px 0;
+}
+
+
+footer .footerlogo{
+    width: 281px;
+    height: 22px;
+    margin-bottom: 45px;
+}
+
+footer .footermenu{
+    width: 480px;
+    height: 30px;
+    display: flex;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+
+footer .footermenu li a{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 0 15px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+footer .footermenu li:first-child a{
+    width: 100%;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+footer .footermenu li a:hover{
+    color: gray;
+}
+
+/* footer .footercontents{
+    position: absolute;
+    top:150px;
+    left:367px; 
+} */
+
+footer .footercontents p{
+    margin: 10px 0
+}
+
+footer .footercontents .with{
+    margin-top: 27px;
+}
+
+.with img{
+    width: 391px;
+    height: 31px;
+}
+
+/* footer .footercontents2{
+    position: absolute;
+    top:194px;
+    right:348px;
+} */
+
+footer .footercontents2 p{
+    margin: 0;
+    padding: 0;
+}
+
+footer .footercontents2 ul {
+    
+    height: 29px;
+    margin-top: 8px;
+    display: inline-block;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footercontents2 ul li{
+    display: inline-block;
+}
+
+footer .footercontents2 ul li img{
+    display: block;
+    width: 29px;
+    height: 29px;
+    margin-top:8px;
+    margin-left:10px;
+}
+
+footer .right{
+    float: right;
+    margin-top: 221px;
+    text-align: right;
+}
+
+
+/*end of footer----------------------*/
+
+
+/*top button-----------------------*/
+
+.top{
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10000;
+    display: block;
+}
+
+
+/*end of top button-----------------------*/
